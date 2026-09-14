@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>    
+<body>
+    <div class="app">
+        <h2>
+        <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" width="30">
+        Weather App
+        </h2>
+
+        <input type="text" id="city" placeholder="Enter the city">
+        <button onclick="getWeather()">Search</button>
+
+        <div class="weather" id="weatherBox">
+            <img id="icon" width="80">
+            <div id="condition"></div>
+            
+            <div class="temp" id="temp"></div>
+            <div class="humidity" id="humidity"></div>
+            <div class="wind" id="wind"></div>          
+        </div>
+
+        <div class="error" id="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
